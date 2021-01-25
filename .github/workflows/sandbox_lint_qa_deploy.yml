@@ -20,7 +20,8 @@ on:
   pull_request:
     branches:
       # - main
-      - Do-Not-Run
+      - run-me
+  
 
 env:
   AZURE_WEBAPP_NAME: github-ci-cd  # set this to your application's name
