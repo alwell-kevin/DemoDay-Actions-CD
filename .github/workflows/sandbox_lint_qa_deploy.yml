@@ -83,7 +83,7 @@ jobs:
           fetch-depth: 0
       # Run Linter against code base #
       - name: Lint Code Base
-        uses: github/super-linter@v3
+        uses: github/super-linter@latest
         env:
           VALIDATE_ALL_CODEBASE: false
           DEFAULT_BRANCH: main
@@ -96,6 +96,7 @@ jobs:
     name: Webapp Deploy - Sandbox
     runs-on: ubuntu-latest
     needs: [build-and-test, prettier]
+    environment: staging_environment
     
     steps:
     - uses: actions/checkout@v2
