@@ -20,7 +20,7 @@ on:
   push:
     branches:
       # - main
-      - dreaming
+      - dreamworks
 
 env:
   AZURE_WEBAPP_NAME: github-ci-cd  # set this to your application's name
